@@ -165,7 +165,7 @@ def predict():
         heart_explainer, heart_lime_explanation = heart_lime_interpretation(features)
 
         # Convert Heart Lime explanation to HTML format
-        heart_lime_html = heart_lime_to_html(heart_lime_explanation)
+        heart_lime_html = heart_lime_to_html(lime_explanation)
 
         # Save Heart Lime explanation to HTML file
         heart_html_filename = 'static/heart_lime_visualization.html'
