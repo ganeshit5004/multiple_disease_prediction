@@ -1,5 +1,3 @@
-<!-- templates/lung_index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Health Prediction</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        /* Optional: Add your custom styles here */
+    </style>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">Health Prediction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -31,7 +35,7 @@
     <h2 class="mb-4">Lung Disease Prediction</h2>
     <form action="/lung_disease" method="post">
         <!-- Input fields for lung disease prediction -->
-        <div class="form-row">
+        <div class="row">
             <div class="form-group col-md-4">
                 <label for="YELLOW_FINGERS">Yellow Fingers:</label>
                 <input type="text" class="form-control" id="YELLOW_FINGERS" name="YELLOW_FINGERS" required>
@@ -46,7 +50,7 @@
             </div>
         </div>
 
-        <div class="form-row">
+        <div class="row">
             <div class="form-group col-md-4">
                 <label for="CHRONIC_DISEASE">Chronic Disease:</label>
                 <input type="text" class="form-control" id="CHRONIC_DISEASE" name="CHRONIC_DISEASE" required>
@@ -61,7 +65,7 @@
             </div>
         </div>
 
-        <div class="form-row">
+        <div class="row">
             <div class="form-group col-md-4">
                 <label for="WHEEZING">Wheezing:</label>
                 <input type="text" class="form-control" id="WHEEZING" name="WHEEZING" required>
@@ -76,7 +80,7 @@
             </div>
         </div>
 
-        <div class="form-row">
+        <div class="row">
             <div class="form-group col-md-4">
                 <label for="SWALLOWING_DIFFICULTY">Swallowing Difficulty:</label>
                 <input type="text" class="form-control" id="SWALLOWING_DIFFICULTY" name="SWALLOWING_DIFFICULTY" required>
@@ -92,7 +96,11 @@
         </div>
 
         <!-- Add the submit button -->
-        <button type="submit" class="btn btn-primary">Predict</button>
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Predict</button>
+            </div>
+        </div>
     </form>
 </div>
 
